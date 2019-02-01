@@ -1,0 +1,21 @@
+Shell 常用命令
+Let  z= z+y 运算
+var=$[算是表达式]
+var=$[(算数表达式)]
+var=$(expr arg1 arg2 arg3)
+Declare -I var=数值
+Echo ‘算数表达式’ | bc
+
+Bash 随机数生成器: $RANDOM(0-32767)
+ Echo $[$RANDOM%50] : 0-49 之间随机数
+
+随机函数
+Color = $[RANDOM%7+31]
+
+字体颜色
+
+ COLOR=$[RANDOM%7+31];echo -e "\e[1;${COLOR}mcolor\e[0m"[
+
+异或
+a=$[a^b];b=$[a^b];a=[a^b];echo $a $b
+
